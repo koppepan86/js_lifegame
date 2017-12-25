@@ -4,7 +4,7 @@ const SCREEN_WIDTH = 400;
 const SCREEN_HEIGHT = 400;
 const NUM_OF_CELL = 50;
 const CELL_SIZE = SCREEN_WIDTH / NUM_OF_CELL;
-const FPS = 5;
+const FPS = 10;
 let canvas;
 let context;
 
