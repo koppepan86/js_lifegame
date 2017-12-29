@@ -12,7 +12,7 @@ let canvas;
 let context;
 
 //load
-window.onload = function(){]
+window.onload = function(){
     //init field
     let field = new Array(NUM_OF_CELL);
     let tempField = new Array(NUM_OF_CELL);
@@ -47,7 +47,7 @@ window.onload = function(){]
 function update(field, tempField){
     calc(field, tempField);
     draw(field);
-    setTimeout(update, 1000/FPS, fieldn, tempField);
+    setTimeout(update, 1000/FPS, field, tempField);
 }
 
 //ロジック部分
