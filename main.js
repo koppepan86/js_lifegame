@@ -1,9 +1,9 @@
 "use strict";
 
 //定数
-const SCREEN_WIDTH = 200;
-const SCREEN_HEIGHT = 200;
-const NUM_OF_CELL = 20;
+const SCREEN_WIDTH = 400;
+const SCREEN_HEIGHT = 400;
+const NUM_OF_CELL = 100;
 const CELL_SIZE = SCREEN_WIDTH / NUM_OF_CELL;
 const FPS = 10;
 
@@ -26,9 +26,6 @@ window.onload = function(){
     for(let i = 0; i < NUM_OF_CELL; i++){
         for(let j = 0; j < NUM_OF_CELL; j++){
             field[i][j] = Math.floor(Math.random()*2);
-
-            //テスト用
-            //field[i][j] = j % 2;
         }
     }
 
@@ -53,8 +50,8 @@ function update(field, tempField){
 //ロジック部分
 function calc(field, tempField){
     let existLife = 0;
-    tempField = field.slice();
-    console.log(tempField == field);
+    tempField = filed.map(l => l.slice());
+    
     for(let i = 0; i < NUM_OF_CELL; i++){
         for(let j = 0; j < NUM_OF_CELL; j++){
             existLife = 0;
