@@ -50,7 +50,7 @@ function update(field, tempField){
 //ロジック部分
 function calc(field, tempField){
     let existLife = 0;
-    tempField = filed.map(l => l.slice());
+    tempField = field.map(l => l.slice());
     
     for(let i = 0; i < NUM_OF_CELL; i++){
         for(let j = 0; j < NUM_OF_CELL; j++){
